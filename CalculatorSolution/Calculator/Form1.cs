@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CalculatorLibrary;
 
 namespace Calculator
 {
@@ -28,6 +29,7 @@ namespace Calculator
             int b = int.Parse(textBoxB.Text);
             LabelResult.Visible = true;
             LabelResult.Text = $"{a+b}";
+            
         }
 
         private void textBoxB_TextChanged(object sender, EventArgs e)
@@ -69,11 +71,12 @@ namespace Calculator
                 LabelResult.Text = $"{a / b}";                
             }
         }
-
+        //Clear
         private void buttonClear_Click(object sender, EventArgs e)
         {
             textBoxA.Clear();
             textBoxB.Clear();
+            LabelResult.Visible = false;
         }
     }
 }

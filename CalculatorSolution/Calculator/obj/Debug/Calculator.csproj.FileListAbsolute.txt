@@ -1,0 +1,9 @@
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\bin\Debug\Calculator.exe.config
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\bin\Debug\Calculator.exe
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\bin\Debug\Calculator.pdb
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.Form1.resources
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.exe
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.pdb

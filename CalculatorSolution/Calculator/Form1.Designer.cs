@@ -40,6 +40,8 @@
             this.labelA = new System.Windows.Forms.Label();
             this.labelB = new System.Windows.Forms.Label();
             this.groupBoxMain = new System.Windows.Forms.GroupBox();
+            this.buttonRoot = new System.Windows.Forms.Button();
+            this.buttonPercent = new System.Windows.Forms.Button();
             this.groupBoxMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +83,7 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(276, 205);
+            this.buttonClear.Location = new System.Drawing.Point(276, 264);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 9;
@@ -121,7 +123,7 @@
             // 
             // buttonHistory
             // 
-            this.buttonHistory.Location = new System.Drawing.Point(12, 205);
+            this.buttonHistory.Location = new System.Drawing.Point(12, 264);
             this.buttonHistory.Name = "buttonHistory";
             this.buttonHistory.Size = new System.Drawing.Size(75, 23);
             this.buttonHistory.TabIndex = 13;
@@ -149,6 +151,8 @@
             // 
             // groupBoxMain
             // 
+            this.groupBoxMain.Controls.Add(this.buttonPercent);
+            this.groupBoxMain.Controls.Add(this.buttonRoot);
             this.groupBoxMain.Controls.Add(this.textBoxA);
             this.groupBoxMain.Controls.Add(this.labelB);
             this.groupBoxMain.Controls.Add(this.LabelResult);
@@ -158,18 +162,37 @@
             this.groupBoxMain.Controls.Add(this.buttondivide);
             this.groupBoxMain.Controls.Add(this.buttonMinus);
             this.groupBoxMain.Controls.Add(this.button2);
-            this.groupBoxMain.Location = new System.Drawing.Point(29, 12);
+            this.groupBoxMain.Location = new System.Drawing.Point(29, 71);
             this.groupBoxMain.Name = "groupBoxMain";
             this.groupBoxMain.Size = new System.Drawing.Size(296, 166);
             this.groupBoxMain.TabIndex = 16;
             this.groupBoxMain.TabStop = false;
             this.groupBoxMain.Text = "Enter a value in A and B then choose operation";
             // 
+            // buttonRoot
+            // 
+            this.buttonRoot.Location = new System.Drawing.Point(170, 95);
+            this.buttonRoot.Name = "buttonRoot";
+            this.buttonRoot.Size = new System.Drawing.Size(42, 23);
+            this.buttonRoot.TabIndex = 16;
+            this.buttonRoot.Text = "root";
+            this.buttonRoot.UseVisualStyleBackColor = true;
+            this.buttonRoot.Click += new System.EventHandler(this.buttonRoot_Click);
+            // 
+            // buttonPercent
+            // 
+            this.buttonPercent.Location = new System.Drawing.Point(220, 95);
+            this.buttonPercent.Name = "buttonPercent";
+            this.buttonPercent.Size = new System.Drawing.Size(42, 23);
+            this.buttonPercent.TabIndex = 17;
+            this.buttonPercent.Text = "%";
+            this.buttonPercent.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 240);
+            this.ClientSize = new System.Drawing.Size(363, 299);
             this.Controls.Add(this.groupBoxMain);
             this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.buttonClear);
@@ -194,6 +217,8 @@
         private System.Windows.Forms.Label labelA;
         private System.Windows.Forms.Label labelB;
         private System.Windows.Forms.GroupBox groupBoxMain;
+        private System.Windows.Forms.Button buttonPercent;
+        private System.Windows.Forms.Button buttonRoot;
     }
 }
 

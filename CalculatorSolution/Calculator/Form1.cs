@@ -103,6 +103,21 @@ namespace Calculator
                 }
             }
         }
+        //Root
+        private void buttonRoot_Click(object sender, EventArgs e)
+        {
+            if (textBoxA.Text == "" && textBoxB.Text == "")
+            {
+                LabelResult.Visible = true;
+                LabelResult.Text = "Please enter value A or value B";
+            }
+            else
+            {               
+                int a = int.Parse(textBoxA.Text);                
+                LabelResult.Visible = true;
+                LabelResult.Text = $"{Math.Sqrt(a)}";
+            }
+        }
         //Clear
         private void buttonClear_Click(object sender, EventArgs e)
         {
@@ -116,5 +131,6 @@ namespace Calculator
         {
 
         }
+
     }
 }

@@ -31,9 +31,9 @@ namespace Calculator
                 LabelResult.Text = "Please enter value A and value B";
             }
             else
-            {
-                int a = int.Parse(textBoxA.Text);
-                int b = int.Parse(textBoxB.Text);
+            {            
+                double a = Convert.ToDouble(textBoxA.Text);
+                double b = Convert.ToDouble(textBoxB.Text);
                 LabelResult.Visible = true;
                 LabelResult.Text = $"{a + b}";
             }        
@@ -55,8 +55,8 @@ namespace Calculator
             }
             else
             {
-                int a = int.Parse(textBoxA.Text);
-                int b = int.Parse(textBoxB.Text);
+                double a = Convert.ToDouble(textBoxA.Text);
+                double b = Convert.ToDouble(textBoxB.Text);
                 LabelResult.Visible = true;
                 LabelResult.Text = $"{a * b}";
             }
@@ -72,8 +72,8 @@ namespace Calculator
             }
             else
             {
-                int a = int.Parse(textBoxA.Text);
-                int b = int.Parse(textBoxB.Text);
+                double a = Convert.ToDouble(textBoxA.Text);
+                double b = Convert.ToDouble(textBoxB.Text);
                 LabelResult.Visible = true;
                 LabelResult.Text = $"{a - b}";
             }
@@ -87,9 +87,9 @@ namespace Calculator
                 LabelResult.Text = "Please enter value A and value B";
             }
             else
-            {
-                int a = int.Parse(textBoxA.Text);
-                int b = int.Parse(textBoxB.Text);
+            {                
+                double a = Convert.ToDouble(textBoxA.Text);                
+                double b = Convert.ToDouble(textBoxB.Text);
                 if (b <= 0)
                 {
                     LabelResult.Visible = true;
@@ -111,8 +111,9 @@ namespace Calculator
                 labelResultAdvanced.Text = "Please enter the value.";
             }
             else
-            {               
-                int a = int.Parse(textBoxAdvanced.Text);                
+            {
+                //int a = int.Parse(textBoxAdvanced.Text);    
+                double a = Convert.ToDouble(textBoxAdvanced.Text);
                 labelResultAdvanced.Visible = true;
                 labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
             }

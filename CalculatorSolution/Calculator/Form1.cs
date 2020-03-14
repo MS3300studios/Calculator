@@ -167,7 +167,7 @@ namespace Calculator
         }
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Created by Mikołaj Strusiński\nGitHub: https://github.com/MS3300studios \nCopyright 2020 Mikołaj Strusiński");
+            MessageBox.Show("Created by Mikołaj Strusiński\nGitHub: https://github.com/MS3300studios \nCopyright (c) 2020 Mikołaj Strusiński");
         }
 
         //INPUT CONTROL:

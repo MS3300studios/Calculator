@@ -3,6 +3,6 @@
 3. Add computing history (via class -> list)
 4. Develop % button
 5. Make the window size unchangable in window properties
-6. Add cosmetic green and red textbox changes
+6.[COMPLETED] Add cosmetic green and red textbox changes
 8.[COMPLETED] Add an icon for the programme
 7.[COMPLETED] Make code more tidy, move buttons and broken methods and utilities

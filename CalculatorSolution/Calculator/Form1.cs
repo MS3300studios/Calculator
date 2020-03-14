@@ -135,8 +135,17 @@ namespace Calculator
             textBoxA.Clear();
             textBoxB.Clear();
             textBoxAdvanced.Clear();
+            textBoxA.BackColor = Color.White;
+            textBoxB.BackColor = Color.White;
+            textBoxAdvanced.BackColor = Color.White;
             LabelResult.Visible = false;
             labelResultAdvanced.Visible = false;
+            //buttons
+            buttonMinus.Enabled = true;
+            button2.Enabled = true; //multiply button
+            buttonPlus.Enabled = true;
+            buttondivide.Enabled = true;
+            buttonRoot.Enabled = true;
         }
         //history
         private void buttonHistory_Click(object sender, EventArgs e)

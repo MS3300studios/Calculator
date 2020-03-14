@@ -139,13 +139,7 @@ namespace Calculator
             textBoxB.BackColor = Color.White;
             textBoxAdvanced.BackColor = Color.White;
             LabelResult.Visible = false;
-            labelResultAdvanced.Visible = false;
-            //buttons
-            buttonMinus.Enabled = true;
-            button2.Enabled = true; //multiply button
-            buttonPlus.Enabled = true;
-            buttondivide.Enabled = true;
-            buttonRoot.Enabled = true;
+            labelResultAdvanced.Visible = false;            
         }
         //history
         private void buttonHistory_Click(object sender, EventArgs e)
@@ -168,12 +162,12 @@ namespace Calculator
         }   
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thanks for using the Calculator!");
+            MessageBox.Show("Thank you for using the Calculator!");
             Application.Exit();
         }
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Created by Mikołaj Strusiński\nGitHub: https://github.com/MS3300studios \nAnyone can use and distribute this programme.");
+            MessageBox.Show("Created by Mikołaj Strusiński\nGitHub: https://github.com/MS3300studios \nCopyright 2020 Mikołaj Strusiński");
         }
 
         //INPUT CONTROL:
@@ -204,10 +198,17 @@ namespace Calculator
                 button2.Enabled = true; //multiply button
                 buttonPlus.Enabled = true;
                 buttondivide.Enabled = true;
+                if (textBoxB.Text == "") 
+                {                    
+                    buttonMinus.Enabled = false;
+                    button2.Enabled = false; //multiply button
+                    buttonPlus.Enabled = false;
+                    buttondivide.Enabled = false;
+                }                
             }
             else
             {
-                textBoxAdvanced.BackColor = Color.PaleVioletRed;
+                textBoxA.BackColor = Color.PaleVioletRed;
                 buttonMinus.Enabled = false;
                 button2.Enabled = false; //multiply button
                 buttonPlus.Enabled = false;

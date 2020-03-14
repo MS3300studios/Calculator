@@ -83,6 +83,7 @@
             // 
             // buttonPlus
             // 
+            this.buttonPlus.Enabled = false;
             this.buttonPlus.Location = new System.Drawing.Point(170, 34);
             this.buttonPlus.Name = "buttonPlus";
             this.buttonPlus.Size = new System.Drawing.Size(42, 25);
@@ -103,6 +104,7 @@
             // 
             // buttonMinus
             // 
+            this.buttonMinus.Enabled = false;
             this.buttonMinus.Location = new System.Drawing.Point(170, 65);
             this.buttonMinus.Name = "buttonMinus";
             this.buttonMinus.Size = new System.Drawing.Size(42, 24);
@@ -113,6 +115,7 @@
             // 
             // button2
             // 
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(220, 65);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(42, 24);
@@ -123,6 +126,7 @@
             // 
             // buttondivide
             // 
+            this.buttondivide.Enabled = false;
             this.buttondivide.Location = new System.Drawing.Point(220, 35);
             this.buttondivide.Name = "buttondivide";
             this.buttondivide.Size = new System.Drawing.Size(42, 24);
@@ -195,9 +199,9 @@
             this.labelinfostart.AutoSize = true;
             this.labelinfostart.Location = new System.Drawing.Point(12, 9);
             this.labelinfostart.Name = "labelinfostart";
-            this.labelinfostart.Size = new System.Drawing.Size(107, 13);
+            this.labelinfostart.Size = new System.Drawing.Size(109, 13);
             this.labelinfostart.TabIndex = 18;
-            this.labelinfostart.Text = "Select operation type";
+            this.labelinfostart.Text = "Select calculator type";
             // 
             // buttonSelectCalc
             // 

@@ -25,10 +25,18 @@ namespace Calculator
         //addition
         private void buttonPlus_Click(object sender, EventArgs e)
         {
-            int a = int.Parse(textBoxA.Text);
-            int b = int.Parse(textBoxB.Text);
-            LabelResult.Visible = true;
-            LabelResult.Text = $"{a+b}";
+            if (textBoxA.Text == "" || textBoxB.Text == "")
+            {
+                LabelResult.Visible = true;
+                LabelResult.Text = "Please enter value A and value B";
+            }
+            else
+            {
+                int a = int.Parse(textBoxA.Text);
+                int b = int.Parse(textBoxB.Text);
+                LabelResult.Visible = true;
+                LabelResult.Text = $"{a + b}";
+            }
             
         }
 
@@ -58,25 +66,41 @@ namespace Calculator
         //subtraction
         private void buttonMinus_Click(object sender, EventArgs e)
         {
-            int a = int.Parse(textBoxA.Text);
-            int b = int.Parse(textBoxB.Text);
-            LabelResult.Visible = true;
-            LabelResult.Text = $"{a - b}";            
+            if (textBoxA.Text == "" || textBoxB.Text == "")
+            {
+                LabelResult.Visible = true;
+                LabelResult.Text = "Please enter value A and value B";
+            }
+            else
+            {
+                int a = int.Parse(textBoxA.Text);
+                int b = int.Parse(textBoxB.Text);
+                LabelResult.Visible = true;
+                LabelResult.Text = $"{a - b}";
+            }
         }
         //division
         private void buttondivide_Click(object sender, EventArgs e)
         {
-            int a = int.Parse(textBoxA.Text);
-            int b = int.Parse(textBoxB.Text);
-            if (b <= 0)
+            if (textBoxA.Text == "" || textBoxB.Text == "")
             {
                 LabelResult.Visible = true;
-                LabelResult.Text = "You cannot divide by 0! Press Clear and try again.";                
+                LabelResult.Text = "Please enter value A and value B";
             }
             else
             {
-                LabelResult.Visible = true;
-                LabelResult.Text = $"{a / b}";                
+                int a = int.Parse(textBoxA.Text);
+                int b = int.Parse(textBoxB.Text);
+                if (b <= 0)
+                {
+                    LabelResult.Visible = true;
+                    LabelResult.Text = "You cannot divide by 0! Press Clear and try again.";
+                }
+                else
+                {
+                    LabelResult.Visible = true;
+                    LabelResult.Text = $"{a / b}";
+                }
             }
         }
         //Clear

@@ -270,6 +270,7 @@
             this.Controls.Add(this.groupBoxMain);
             this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.buttonClear);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculator";

@@ -208,9 +208,9 @@ namespace Calculator
         private void textBoxB_TextChanged(object sender, EventArgs e)
         {
             double score = 0;
-            if (double.TryParse(textBoxA.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
+            if (double.TryParse(textBoxB.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
             {
-                textBoxA.BackColor = Color.LightGreen;
+                textBoxB.BackColor = Color.LightGreen;
                 buttonMinus.Enabled = true;
                 button2.Enabled = true; //multiply button
                 buttonPlus.Enabled = true;
@@ -218,7 +218,7 @@ namespace Calculator
             }
             else
             {
-                textBoxAdvanced.BackColor = Color.PaleVioletRed;
+                textBoxB.BackColor = Color.PaleVioletRed;
                 buttonMinus.Enabled = false;
                 button2.Enabled = false; //multiply button
                 buttonPlus.Enabled = false;

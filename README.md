@@ -9,4 +9,6 @@
 * Advanced Calculator
   * Calculating Root
   * Calculating Percentage (coming soon) 
+* Colouring of the Text Boxes (user sees when the number typed in is correct)
+* Very foolproof design
 

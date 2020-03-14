@@ -166,6 +166,16 @@ namespace Calculator
                 groupBoxAdvanced.Visible = true;
             }
         }   
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks for using the Calculator!");
+            Application.Exit();
+        }
+        private void buttonAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Created by Mikołaj Strusiński\nGitHub: https://github.com/MS3300studios \nAnyone can use and distribute this programme.");
+        }
+
         //INPUT CONTROL:
         
         //textBoxAdvanced
@@ -233,8 +243,7 @@ namespace Calculator
         }
         //ComboBox
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
+        {           
         }
 
     }

@@ -49,6 +49,8 @@
             this.buttonRoot = new System.Windows.Forms.Button();
             this.labelResultAdvanced = new System.Windows.Forms.Label();
             this.textBoxAdvanced = new System.Windows.Forms.TextBox();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.buttonAbout = new System.Windows.Forms.Button();
             this.groupBoxMain.SuspendLayout();
             this.groupBoxAdvanced.SuspendLayout();
             this.SuspendLayout();
@@ -91,9 +93,9 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(215, 264);
+            this.buttonClear.Location = new System.Drawing.Point(259, 264);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonClear.Size = new System.Drawing.Size(53, 23);
             this.buttonClear.TabIndex = 9;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
@@ -133,7 +135,7 @@
             // 
             this.buttonHistory.Location = new System.Drawing.Point(12, 264);
             this.buttonHistory.Name = "buttonHistory";
-            this.buttonHistory.Size = new System.Drawing.Size(75, 23);
+            this.buttonHistory.Size = new System.Drawing.Size(53, 23);
             this.buttonHistory.TabIndex = 13;
             this.buttonHistory.Text = "History";
             this.buttonHistory.UseVisualStyleBackColor = true;
@@ -258,11 +260,33 @@
             this.textBoxAdvanced.TabIndex = 0;
             this.textBoxAdvanced.TextChanged += new System.EventHandler(this.textBoxAdvanced_TextChanged);
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(90, 264);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(53, 23);
+            this.buttonExit.TabIndex = 21;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // buttonAbout
+            // 
+            this.buttonAbout.Location = new System.Drawing.Point(182, 264);
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Size = new System.Drawing.Size(53, 23);
+            this.buttonAbout.TabIndex = 22;
+            this.buttonAbout.Text = "About";
+            this.buttonAbout.UseVisualStyleBackColor = true;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 299);
+            this.Controls.Add(this.buttonAbout);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBoxAdvanced);
             this.Controls.Add(this.buttonSelectCalc);
             this.Controls.Add(this.labelinfostart);
@@ -304,6 +328,8 @@
         private System.Windows.Forms.TextBox textBoxAdvanced;
         private System.Windows.Forms.Button buttonPercent;
         private System.Windows.Forms.Button buttonRoot;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button buttonAbout;
     }
 }
 

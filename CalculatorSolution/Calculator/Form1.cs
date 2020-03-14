@@ -36,8 +36,7 @@ namespace Calculator
                 int b = int.Parse(textBoxB.Text);
                 LabelResult.Visible = true;
                 LabelResult.Text = $"{a + b}";
-            }
-            
+            }        
         }
 
         private void textBoxB_TextChanged(object sender, EventArgs e)
@@ -106,16 +105,16 @@ namespace Calculator
         //Root
         private void buttonRoot_Click(object sender, EventArgs e)
         {
-            if (textBoxA.Text == "" && textBoxB.Text == "")
+            if (textBoxAdvanced.Text == "")
             {
-                LabelResult.Visible = true;
-                LabelResult.Text = "Please enter value A or value B";
+                labelResultAdvanced.Visible = true;
+                labelResultAdvanced.Text = "Please enter the value.";
             }
             else
             {               
-                int a = int.Parse(textBoxA.Text);                
-                LabelResult.Visible = true;
-                LabelResult.Text = $"{Math.Sqrt(a)}";
+                int a = int.Parse(textBoxAdvanced.Text);                
+                labelResultAdvanced.Visible = true;
+                labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
             }
         }
         //Clear
@@ -131,6 +130,24 @@ namespace Calculator
         {
 
         }
-
+        //ComboBox
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+        //ComboBox Option Select Button
+        private void buttonSelectCalc_Click(object sender, EventArgs e)
+        {
+            if(comboBox1.SelectedItem == "Basic calculator")
+            {
+                groupBoxAdvanced.Visible = false;
+                groupBoxMain.Visible = true;
+            }
+            else if(comboBox1.SelectedItem == "Advanced calculator")
+            {
+                groupBoxMain.Visible = false;
+                groupBoxAdvanced.Visible = true;
+            }
+        }
     }
 }

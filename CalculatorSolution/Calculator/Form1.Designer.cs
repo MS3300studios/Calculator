@@ -40,9 +40,16 @@
             this.labelA = new System.Windows.Forms.Label();
             this.labelB = new System.Windows.Forms.Label();
             this.groupBoxMain = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelinfostart = new System.Windows.Forms.Label();
+            this.buttonSelectCalc = new System.Windows.Forms.Button();
+            this.groupBoxAdvanced = new System.Windows.Forms.GroupBox();
+            this.textBoxAdvanced = new System.Windows.Forms.TextBox();
+            this.labelResultAdvanced = new System.Windows.Forms.Label();
             this.buttonRoot = new System.Windows.Forms.Button();
             this.buttonPercent = new System.Windows.Forms.Button();
             this.groupBoxMain.SuspendLayout();
+            this.groupBoxAdvanced.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxA
@@ -83,7 +90,7 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(276, 264);
+            this.buttonClear.Location = new System.Drawing.Point(215, 264);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 9;
@@ -151,8 +158,6 @@
             // 
             // groupBoxMain
             // 
-            this.groupBoxMain.Controls.Add(this.buttonPercent);
-            this.groupBoxMain.Controls.Add(this.buttonRoot);
             this.groupBoxMain.Controls.Add(this.textBoxA);
             this.groupBoxMain.Controls.Add(this.labelB);
             this.groupBoxMain.Controls.Add(this.LabelResult);
@@ -162,29 +167,91 @@
             this.groupBoxMain.Controls.Add(this.buttondivide);
             this.groupBoxMain.Controls.Add(this.buttonMinus);
             this.groupBoxMain.Controls.Add(this.button2);
-            this.groupBoxMain.Location = new System.Drawing.Point(29, 71);
+            this.groupBoxMain.Location = new System.Drawing.Point(12, 71);
             this.groupBoxMain.Name = "groupBoxMain";
             this.groupBoxMain.Size = new System.Drawing.Size(296, 166);
             this.groupBoxMain.TabIndex = 16;
             this.groupBoxMain.TabStop = false;
             this.groupBoxMain.Text = "Enter a value in A and B then choose operation";
+            this.groupBoxMain.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Basic calculator",
+            "Advanced calculator"});
+            this.comboBox1.Location = new System.Drawing.Point(125, 7);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 17;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // labelinfostart
+            // 
+            this.labelinfostart.AutoSize = true;
+            this.labelinfostart.Location = new System.Drawing.Point(12, 9);
+            this.labelinfostart.Name = "labelinfostart";
+            this.labelinfostart.Size = new System.Drawing.Size(107, 13);
+            this.labelinfostart.TabIndex = 18;
+            this.labelinfostart.Text = "Select operation type";
+            // 
+            // buttonSelectCalc
+            // 
+            this.buttonSelectCalc.Location = new System.Drawing.Point(254, 7);
+            this.buttonSelectCalc.Name = "buttonSelectCalc";
+            this.buttonSelectCalc.Size = new System.Drawing.Size(54, 21);
+            this.buttonSelectCalc.TabIndex = 19;
+            this.buttonSelectCalc.Text = "select";
+            this.buttonSelectCalc.UseVisualStyleBackColor = true;
+            this.buttonSelectCalc.Click += new System.EventHandler(this.buttonSelectCalc_Click);
+            // 
+            // groupBoxAdvanced
+            // 
+            this.groupBoxAdvanced.Controls.Add(this.buttonPercent);
+            this.groupBoxAdvanced.Controls.Add(this.buttonRoot);
+            this.groupBoxAdvanced.Controls.Add(this.labelResultAdvanced);
+            this.groupBoxAdvanced.Controls.Add(this.textBoxAdvanced);
+            this.groupBoxAdvanced.Location = new System.Drawing.Point(12, 65);
+            this.groupBoxAdvanced.Name = "groupBoxAdvanced";
+            this.groupBoxAdvanced.Size = new System.Drawing.Size(296, 166);
+            this.groupBoxAdvanced.TabIndex = 20;
+            this.groupBoxAdvanced.TabStop = false;
+            this.groupBoxAdvanced.Text = "Enter the value";
+            this.groupBoxAdvanced.Visible = false;
+            // 
+            // textBoxAdvanced
+            // 
+            this.textBoxAdvanced.Location = new System.Drawing.Point(26, 43);
+            this.textBoxAdvanced.Name = "textBoxAdvanced";
+            this.textBoxAdvanced.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAdvanced.TabIndex = 0;
+            // 
+            // labelResultAdvanced
+            // 
+            this.labelResultAdvanced.AutoSize = true;
+            this.labelResultAdvanced.Location = new System.Drawing.Point(23, 92);
+            this.labelResultAdvanced.Name = "labelResultAdvanced";
+            this.labelResultAdvanced.Size = new System.Drawing.Size(108, 13);
+            this.labelResultAdvanced.TabIndex = 1;
+            this.labelResultAdvanced.Text = "labelResultAdvanced";
+            this.labelResultAdvanced.Visible = false;
             // 
             // buttonRoot
             // 
-            this.buttonRoot.Location = new System.Drawing.Point(170, 95);
+            this.buttonRoot.Location = new System.Drawing.Point(187, 43);
             this.buttonRoot.Name = "buttonRoot";
-            this.buttonRoot.Size = new System.Drawing.Size(42, 23);
-            this.buttonRoot.TabIndex = 16;
+            this.buttonRoot.Size = new System.Drawing.Size(75, 23);
+            this.buttonRoot.TabIndex = 2;
             this.buttonRoot.Text = "root";
             this.buttonRoot.UseVisualStyleBackColor = true;
-            this.buttonRoot.Click += new System.EventHandler(this.buttonRoot_Click);
             // 
             // buttonPercent
             // 
-            this.buttonPercent.Location = new System.Drawing.Point(220, 95);
+            this.buttonPercent.Location = new System.Drawing.Point(187, 82);
             this.buttonPercent.Name = "buttonPercent";
-            this.buttonPercent.Size = new System.Drawing.Size(42, 23);
-            this.buttonPercent.TabIndex = 17;
+            this.buttonPercent.Size = new System.Drawing.Size(75, 23);
+            this.buttonPercent.TabIndex = 3;
             this.buttonPercent.Text = "%";
             this.buttonPercent.UseVisualStyleBackColor = true;
             // 
@@ -192,7 +259,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 299);
+            this.ClientSize = new System.Drawing.Size(324, 299);
+            this.Controls.Add(this.groupBoxAdvanced);
+            this.Controls.Add(this.buttonSelectCalc);
+            this.Controls.Add(this.labelinfostart);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBoxMain);
             this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.buttonClear);
@@ -200,7 +271,10 @@
             this.Text = "Calculator";
             this.groupBoxMain.ResumeLayout(false);
             this.groupBoxMain.PerformLayout();
+            this.groupBoxAdvanced.ResumeLayout(false);
+            this.groupBoxAdvanced.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -217,6 +291,12 @@
         private System.Windows.Forms.Label labelA;
         private System.Windows.Forms.Label labelB;
         private System.Windows.Forms.GroupBox groupBoxMain;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label labelinfostart;
+        private System.Windows.Forms.Button buttonSelectCalc;
+        private System.Windows.Forms.GroupBox groupBoxAdvanced;
+        private System.Windows.Forms.Label labelResultAdvanced;
+        private System.Windows.Forms.TextBox textBoxAdvanced;
         private System.Windows.Forms.Button buttonPercent;
         private System.Windows.Forms.Button buttonRoot;
     }

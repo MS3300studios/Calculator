@@ -4,4 +4,4 @@
 4. Develop % button
 5. Make the window size unchangable in window properties
 6. Add cosmetic green and red textbox changes
-7. Make code more tidy, move buttons and broken methods and utilities
+7.[COMPLETED] Make code more tidy, move buttons and broken methods and utilities

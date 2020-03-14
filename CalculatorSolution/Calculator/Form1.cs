@@ -18,11 +18,8 @@ namespace Calculator
             InitializeComponent();
         }       
 
+        //BUTTONS:
 
-        private void textBoxA_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
         //addition
         private void buttonPlus_Click(object sender, EventArgs e)
         {
@@ -44,13 +41,6 @@ namespace Calculator
             LabelResult.Text = $"{a + b}";
                 
         }
-
-        private void textBoxB_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         //multiplication
         private void button2_Click(object sender, EventArgs e)
         {
@@ -119,21 +109,6 @@ namespace Calculator
             }
 
         }
-        //Root_broken
-        private void buttonRoot_Click(object sender, EventArgs e)
-        {
-            if (textBoxAdvanced.Text == "")
-            {
-                labelResultAdvanced.Visible = true;
-                labelResultAdvanced.Text = "Please enter the value.";
-            }
-            else
-            {                   
-                double a = Convert.ToDouble(textBoxAdvanced.Text);
-                labelResultAdvanced.Visible = true;
-                labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
-            }
-        }
         //Root_correct
         private void buttonRoot_Click_1(object sender, EventArgs e)
         {
@@ -152,6 +127,8 @@ namespace Calculator
             labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
 
         }
+        //OTHERS:
+
         //Clear
         private void buttonClear_Click(object sender, EventArgs e)
         {
@@ -161,16 +138,10 @@ namespace Calculator
             LabelResult.Visible = false;
             labelResultAdvanced.Visible = false;
         }
-
         //history
         private void buttonHistory_Click(object sender, EventArgs e)
         {
 
-        }
-        //ComboBox
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
         //ComboBox Option Select Button
         private void buttonSelectCalc_Click(object sender, EventArgs e)
@@ -186,5 +157,23 @@ namespace Calculator
                 groupBoxAdvanced.Visible = true;
             }
         }      
+        //NOT NEEDED:
+        private void textBoxB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBoxA_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+        //Root_broken
+        private void buttonRoot_Click(object sender, EventArgs e)
+        {        
+        }
+        //ComboBox
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

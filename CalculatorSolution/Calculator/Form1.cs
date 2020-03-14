@@ -122,7 +122,9 @@ namespace Calculator
         {
             textBoxA.Clear();
             textBoxB.Clear();
+            textBoxAdvanced.Clear();
             LabelResult.Visible = false;
+            labelResultAdvanced.Visible = false;
         }
 
         //history

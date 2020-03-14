@@ -44,10 +44,10 @@
             this.labelinfostart = new System.Windows.Forms.Label();
             this.buttonSelectCalc = new System.Windows.Forms.Button();
             this.groupBoxAdvanced = new System.Windows.Forms.GroupBox();
-            this.textBoxAdvanced = new System.Windows.Forms.TextBox();
-            this.labelResultAdvanced = new System.Windows.Forms.Label();
-            this.buttonRoot = new System.Windows.Forms.Button();
             this.buttonPercent = new System.Windows.Forms.Button();
+            this.buttonRoot = new System.Windows.Forms.Button();
+            this.labelResultAdvanced = new System.Windows.Forms.Label();
+            this.textBoxAdvanced = new System.Windows.Forms.TextBox();
             this.groupBoxMain.SuspendLayout();
             this.groupBoxAdvanced.SuspendLayout();
             this.SuspendLayout();
@@ -220,12 +220,24 @@
             this.groupBoxAdvanced.Text = "Enter the value";
             this.groupBoxAdvanced.Visible = false;
             // 
-            // textBoxAdvanced
+            // buttonPercent
             // 
-            this.textBoxAdvanced.Location = new System.Drawing.Point(26, 43);
-            this.textBoxAdvanced.Name = "textBoxAdvanced";
-            this.textBoxAdvanced.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAdvanced.TabIndex = 0;
+            this.buttonPercent.Location = new System.Drawing.Point(187, 82);
+            this.buttonPercent.Name = "buttonPercent";
+            this.buttonPercent.Size = new System.Drawing.Size(75, 23);
+            this.buttonPercent.TabIndex = 3;
+            this.buttonPercent.Text = "%";
+            this.buttonPercent.UseVisualStyleBackColor = true;
+            // 
+            // buttonRoot
+            // 
+            this.buttonRoot.Location = new System.Drawing.Point(187, 43);
+            this.buttonRoot.Name = "buttonRoot";
+            this.buttonRoot.Size = new System.Drawing.Size(75, 23);
+            this.buttonRoot.TabIndex = 2;
+            this.buttonRoot.Text = "root";
+            this.buttonRoot.UseVisualStyleBackColor = true;
+            this.buttonRoot.Click += new System.EventHandler(this.buttonRoot_Click_1);
             // 
             // labelResultAdvanced
             // 
@@ -237,23 +249,12 @@
             this.labelResultAdvanced.Text = "labelResultAdvanced";
             this.labelResultAdvanced.Visible = false;
             // 
-            // buttonRoot
+            // textBoxAdvanced
             // 
-            this.buttonRoot.Location = new System.Drawing.Point(187, 43);
-            this.buttonRoot.Name = "buttonRoot";
-            this.buttonRoot.Size = new System.Drawing.Size(75, 23);
-            this.buttonRoot.TabIndex = 2;
-            this.buttonRoot.Text = "root";
-            this.buttonRoot.UseVisualStyleBackColor = true;
-            // 
-            // buttonPercent
-            // 
-            this.buttonPercent.Location = new System.Drawing.Point(187, 82);
-            this.buttonPercent.Name = "buttonPercent";
-            this.buttonPercent.Size = new System.Drawing.Size(75, 23);
-            this.buttonPercent.TabIndex = 3;
-            this.buttonPercent.Text = "%";
-            this.buttonPercent.UseVisualStyleBackColor = true;
+            this.textBoxAdvanced.Location = new System.Drawing.Point(26, 43);
+            this.textBoxAdvanced.Name = "textBoxAdvanced";
+            this.textBoxAdvanced.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAdvanced.TabIndex = 0;
             // 
             // Form1
             // 

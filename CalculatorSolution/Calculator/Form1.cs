@@ -102,7 +102,7 @@ namespace Calculator
                 }
             }
         }
-        //Root
+        //Root_broken
         private void buttonRoot_Click(object sender, EventArgs e)
         {
             if (textBoxAdvanced.Text == "")
@@ -113,6 +113,21 @@ namespace Calculator
             else
             {               
                 int a = int.Parse(textBoxAdvanced.Text);                
+                labelResultAdvanced.Visible = true;
+                labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
+            }
+        }
+        //Root_correct
+        private void buttonRoot_Click_1(object sender, EventArgs e)
+        {
+            if (textBoxAdvanced.Text == "")
+            {
+                labelResultAdvanced.Visible = true;
+                labelResultAdvanced.Text = "Please enter the value.";
+            }
+            else
+            {
+                int a = int.Parse(textBoxAdvanced.Text);
                 labelResultAdvanced.Visible = true;
                 labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
             }

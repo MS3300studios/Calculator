@@ -111,8 +111,7 @@ namespace Calculator
                 labelResultAdvanced.Text = "Please enter the value.";
             }
             else
-            {
-                //int a = int.Parse(textBoxAdvanced.Text);    
+            {                   
                 double a = Convert.ToDouble(textBoxAdvanced.Text);
                 labelResultAdvanced.Visible = true;
                 labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
@@ -128,7 +127,7 @@ namespace Calculator
             }
             else
             {
-                int a = int.Parse(textBoxAdvanced.Text);
+                double a = Convert.ToDouble(textBoxAdvanced.Text);
                 labelResultAdvanced.Visible = true;
                 labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
             }
@@ -166,6 +165,6 @@ namespace Calculator
                 groupBoxMain.Visible = false;
                 groupBoxAdvanced.Visible = true;
             }
-        }
+        }      
     }
 }

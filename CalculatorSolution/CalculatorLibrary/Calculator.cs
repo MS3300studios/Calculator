@@ -14,7 +14,7 @@ namespace CalculatorLibrary
         
         private void Error()
         {
-        
+            //if( System.FormatException)
         }
     }
 }

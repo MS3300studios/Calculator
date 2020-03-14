@@ -85,5 +85,8 @@
       <Name>CalculatorLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="ToDo.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

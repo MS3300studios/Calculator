@@ -16,7 +16,8 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
-        }
+        }       
+
 
         private void textBoxA_TextChanged(object sender, EventArgs e)
         {
@@ -25,82 +26,98 @@ namespace Calculator
         //addition
         private void buttonPlus_Click(object sender, EventArgs e)
         {
-            if (textBoxA.Text == "" || textBoxB.Text == "")
+
+            try
             {
-                LabelResult.Visible = true;
-                LabelResult.Text = "Please enter value A and value B";
+                double d = double.Parse(textBoxA.Text);
+                double c = double.Parse(textBoxB.Text);
             }
-            else
-            {            
-                double a = Convert.ToDouble(textBoxA.Text);
-                double b = Convert.ToDouble(textBoxB.Text);
-                LabelResult.Visible = true;
-                LabelResult.Text = $"{a + b}";
-            }        
+            catch (FormatException)
+            {
+                MessageBox.Show("Wrong input! Reload the calculator and try again! For instructions, open ReadMe.txt in the programme files.");
+                Application.Exit();
+            }                                   
+                               
+            double a = double.Parse(textBoxA.Text);
+            double b = double.Parse(textBoxB.Text);
+            LabelResult.Visible = true;
+            LabelResult.Text = $"{a + b}";
+                
         }
 
         private void textBoxB_TextChanged(object sender, EventArgs e)
         {
 
         }
-        
-        
+
+
         //multiplication
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBoxA.Text == "" || textBoxB.Text == "")
+            try
             {
-                LabelResult.Visible = true;
-                LabelResult.Text = "Please enter value A and value B";                
+                double d = double.Parse(textBoxA.Text);
+                double c = double.Parse(textBoxB.Text);
             }
-            else
+            catch (FormatException)
             {
-                double a = Convert.ToDouble(textBoxA.Text);
-                double b = Convert.ToDouble(textBoxB.Text);
-                LabelResult.Visible = true;
-                LabelResult.Text = $"{a * b}";
+                MessageBox.Show("Wrong input! Reload the calculator and try again! For instructions, open ReadMe.txt in the programme files.");
+                Application.Exit();
             }
 
+            double a = Convert.ToDouble(textBoxA.Text);
+            double b = Convert.ToDouble(textBoxB.Text);
+            LabelResult.Visible = true;
+            LabelResult.Text = $"{a * b}";
         }
         //subtraction
         private void buttonMinus_Click(object sender, EventArgs e)
         {
-            if (textBoxA.Text == "" || textBoxB.Text == "")
+            try
             {
-                LabelResult.Visible = true;
-                LabelResult.Text = "Please enter value A and value B";
+                double d = double.Parse(textBoxA.Text);
+                double c = double.Parse(textBoxB.Text);
             }
-            else
+            catch (FormatException)
             {
-                double a = Convert.ToDouble(textBoxA.Text);
-                double b = Convert.ToDouble(textBoxB.Text);
-                LabelResult.Visible = true;
-                LabelResult.Text = $"{a - b}";
+                MessageBox.Show("Wrong input! Reload the calculator and try again! For instructions, open ReadMe.txt in the programme files.");
+                Application.Exit();
             }
+
+            double a = Convert.ToDouble(textBoxA.Text);
+            double b = Convert.ToDouble(textBoxB.Text);
+            LabelResult.Visible = true;
+            LabelResult.Text = $"{a - b}";
+
         }
         //division
         private void buttondivide_Click(object sender, EventArgs e)
         {
-            if (textBoxA.Text == "" || textBoxB.Text == "")
+            try
+            {
+                double d = double.Parse(textBoxA.Text);
+                double c = double.Parse(textBoxB.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Wrong input! Reload the calculator and try again! For instructions, open ReadMe.txt in the programme files.");
+                Application.Exit();
+            }
+
+
+            double a = Convert.ToDouble(textBoxA.Text);
+            double b = Convert.ToDouble(textBoxB.Text);
+            if (b <= 0)
             {
                 LabelResult.Visible = true;
-                LabelResult.Text = "Please enter value A and value B";
+                LabelResult.Text = "You cannot divide by 0! Press Clear and try again.";
             }
             else
-            {                
-                double a = Convert.ToDouble(textBoxA.Text);                
-                double b = Convert.ToDouble(textBoxB.Text);
-                if (b <= 0)
-                {
-                    LabelResult.Visible = true;
-                    LabelResult.Text = "You cannot divide by 0! Press Clear and try again.";
-                }
-                else
-                {
-                    LabelResult.Visible = true;
-                    LabelResult.Text = $"{a / b}";
-                }
+            {
+                LabelResult.Visible = true;
+                LabelResult.Text = $"{a / b}";
             }
+
         }
         //Root_broken
         private void buttonRoot_Click(object sender, EventArgs e)
@@ -120,17 +137,20 @@ namespace Calculator
         //Root_correct
         private void buttonRoot_Click_1(object sender, EventArgs e)
         {
-            if (textBoxAdvanced.Text == "")
+            try
             {
-                labelResultAdvanced.Visible = true;
-                labelResultAdvanced.Text = "Please enter the value.";
+                double d = double.Parse(textBoxAdvanced.Text);
             }
-            else
+            catch (FormatException)
             {
-                double a = Convert.ToDouble(textBoxAdvanced.Text);
-                labelResultAdvanced.Visible = true;
-                labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
+                MessageBox.Show("Wrong input! Reload the calculator and try again! For instructions, open ReadMe.txt in the programme files.");
+                Application.Exit();
             }
+
+            double a = Convert.ToDouble(textBoxAdvanced.Text);
+            labelResultAdvanced.Visible = true;
+            labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
+
         }
         //Clear
         private void buttonClear_Click(object sender, EventArgs e)

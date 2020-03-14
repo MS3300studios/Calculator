@@ -7,3 +7,6 @@ D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator
 D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
 D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.exe
 D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.pdb
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\bin\Debug\CalculatorLibrary.dll
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\bin\Debug\CalculatorLibrary.pdb
+D:\WSEI programmes\Calculator\CalculatorSolution\Calculator\obj\Debug\Calculator.csproj.CopyComplete

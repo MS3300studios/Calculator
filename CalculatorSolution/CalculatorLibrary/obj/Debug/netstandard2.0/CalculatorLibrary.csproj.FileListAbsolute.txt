@@ -1,0 +1,8 @@
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\bin\Debug\netstandard2.0\CalculatorLibrary.deps.json
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\bin\Debug\netstandard2.0\CalculatorLibrary.dll
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\bin\Debug\netstandard2.0\CalculatorLibrary.pdb
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.csprojAssemblyReference.cache
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.AssemblyInfoInputs.cache
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.AssemblyInfo.cs
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.dll
+D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.pdb

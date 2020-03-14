@@ -41,10 +41,18 @@ namespace Calculator
         //multiplication
         private void button2_Click(object sender, EventArgs e)
         {
-            int a = int.Parse(textBoxA.Text);
-            int b = int.Parse(textBoxB.Text);
-            LabelResult.Visible = true;
-            LabelResult.Text = $"{a * b}";
+            if (textBoxA.Text == "" || textBoxB.Text == "")
+            {
+                LabelResult.Visible = true;
+                LabelResult.Text = "Please enter value A and value B";                
+            }
+            else
+            {
+                int a = int.Parse(textBoxA.Text);
+                int b = int.Parse(textBoxB.Text);
+                LabelResult.Visible = true;
+                LabelResult.Text = $"{a * b}";
+            }
 
         }
         //subtraction
@@ -77,6 +85,12 @@ namespace Calculator
             textBoxA.Clear();
             textBoxB.Clear();
             LabelResult.Visible = false;
+        }
+
+        //history
+        private void buttonHistory_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

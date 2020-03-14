@@ -39,11 +39,13 @@
             this.buttonHistory = new System.Windows.Forms.Button();
             this.labelA = new System.Windows.Forms.Label();
             this.labelB = new System.Windows.Forms.Label();
+            this.groupBoxMain = new System.Windows.Forms.GroupBox();
+            this.groupBoxMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxA
             // 
-            this.textBoxA.Location = new System.Drawing.Point(80, 33);
+            this.textBoxA.Location = new System.Drawing.Point(56, 33);
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(51, 20);
             this.textBoxA.TabIndex = 2;
@@ -52,7 +54,7 @@
             // LabelResult
             // 
             this.LabelResult.AutoSize = true;
-            this.LabelResult.Location = new System.Drawing.Point(77, 135);
+            this.LabelResult.Location = new System.Drawing.Point(53, 135);
             this.LabelResult.Name = "LabelResult";
             this.LabelResult.Size = new System.Drawing.Size(54, 13);
             this.LabelResult.TabIndex = 6;
@@ -61,7 +63,7 @@
             // 
             // textBoxB
             // 
-            this.textBoxB.Location = new System.Drawing.Point(80, 69);
+            this.textBoxB.Location = new System.Drawing.Point(56, 69);
             this.textBoxB.Name = "textBoxB";
             this.textBoxB.Size = new System.Drawing.Size(51, 20);
             this.textBoxB.TabIndex = 7;
@@ -69,7 +71,7 @@
             // 
             // buttonPlus
             // 
-            this.buttonPlus.Location = new System.Drawing.Point(194, 34);
+            this.buttonPlus.Location = new System.Drawing.Point(170, 34);
             this.buttonPlus.Name = "buttonPlus";
             this.buttonPlus.Size = new System.Drawing.Size(42, 25);
             this.buttonPlus.TabIndex = 8;
@@ -89,7 +91,7 @@
             // 
             // buttonMinus
             // 
-            this.buttonMinus.Location = new System.Drawing.Point(194, 65);
+            this.buttonMinus.Location = new System.Drawing.Point(170, 65);
             this.buttonMinus.Name = "buttonMinus";
             this.buttonMinus.Size = new System.Drawing.Size(42, 24);
             this.buttonMinus.TabIndex = 10;
@@ -99,7 +101,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(244, 65);
+            this.button2.Location = new System.Drawing.Point(220, 65);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(42, 24);
             this.button2.TabIndex = 11;
@@ -109,7 +111,7 @@
             // 
             // buttondivide
             // 
-            this.buttondivide.Location = new System.Drawing.Point(244, 35);
+            this.buttondivide.Location = new System.Drawing.Point(220, 35);
             this.buttondivide.Name = "buttondivide";
             this.buttondivide.Size = new System.Drawing.Size(42, 24);
             this.buttondivide.TabIndex = 12;
@@ -125,11 +127,12 @@
             this.buttonHistory.TabIndex = 13;
             this.buttonHistory.Text = "History";
             this.buttonHistory.UseVisualStyleBackColor = true;
+            this.buttonHistory.Click += new System.EventHandler(this.buttonHistory_Click);
             // 
             // labelA
             // 
             this.labelA.AutoSize = true;
-            this.labelA.Location = new System.Drawing.Point(60, 36);
+            this.labelA.Location = new System.Drawing.Point(36, 36);
             this.labelA.Name = "labelA";
             this.labelA.Size = new System.Drawing.Size(17, 13);
             this.labelA.TabIndex = 14;
@@ -138,32 +141,43 @@
             // labelB
             // 
             this.labelB.AutoSize = true;
-            this.labelB.Location = new System.Drawing.Point(60, 72);
+            this.labelB.Location = new System.Drawing.Point(36, 72);
             this.labelB.Name = "labelB";
             this.labelB.Size = new System.Drawing.Size(17, 13);
             this.labelB.TabIndex = 15;
             this.labelB.Text = "B:";
+            // 
+            // groupBoxMain
+            // 
+            this.groupBoxMain.Controls.Add(this.textBoxA);
+            this.groupBoxMain.Controls.Add(this.labelB);
+            this.groupBoxMain.Controls.Add(this.LabelResult);
+            this.groupBoxMain.Controls.Add(this.labelA);
+            this.groupBoxMain.Controls.Add(this.textBoxB);
+            this.groupBoxMain.Controls.Add(this.buttonPlus);
+            this.groupBoxMain.Controls.Add(this.buttondivide);
+            this.groupBoxMain.Controls.Add(this.buttonMinus);
+            this.groupBoxMain.Controls.Add(this.button2);
+            this.groupBoxMain.Location = new System.Drawing.Point(29, 12);
+            this.groupBoxMain.Name = "groupBoxMain";
+            this.groupBoxMain.Size = new System.Drawing.Size(296, 166);
+            this.groupBoxMain.TabIndex = 16;
+            this.groupBoxMain.TabStop = false;
+            this.groupBoxMain.Text = "Enter a value in A and B then choose operation";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 240);
-            this.Controls.Add(this.labelB);
-            this.Controls.Add(this.labelA);
+            this.Controls.Add(this.groupBoxMain);
             this.Controls.Add(this.buttonHistory);
-            this.Controls.Add(this.buttondivide);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.buttonMinus);
             this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonPlus);
-            this.Controls.Add(this.textBoxB);
-            this.Controls.Add(this.LabelResult);
-            this.Controls.Add(this.textBoxA);
             this.Name = "Form1";
             this.Text = "Calculator";
+            this.groupBoxMain.ResumeLayout(false);
+            this.groupBoxMain.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -179,6 +193,7 @@
         private System.Windows.Forms.Button buttonHistory;
         private System.Windows.Forms.Label labelA;
         private System.Windows.Forms.Label labelB;
+        private System.Windows.Forms.GroupBox groupBoxMain;
     }
 }
 

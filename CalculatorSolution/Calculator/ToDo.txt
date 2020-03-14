@@ -6,4 +6,4 @@
 6.[COMPLETED] Add cosmetic green and red textbox changes
 7.[COMPLETED] Add an icon for the programme
 8.[COMPLETED] Make code more tidy, move buttons and broken methods and utilities
-9. Fix the colours in textBoxA and textBoxB
+9.[COMPLETED] Fix the colours in textBoxA and textBoxB

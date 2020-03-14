@@ -256,6 +256,7 @@
             this.textBoxAdvanced.Name = "textBoxAdvanced";
             this.textBoxAdvanced.Size = new System.Drawing.Size(100, 20);
             this.textBoxAdvanced.TabIndex = 0;
+            this.textBoxAdvanced.TextChanged += new System.EventHandler(this.textBoxAdvanced_TextChanged);
             // 
             // Form1
             // 

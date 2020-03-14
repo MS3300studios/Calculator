@@ -156,16 +156,68 @@ namespace Calculator
                 groupBoxMain.Visible = false;
                 groupBoxAdvanced.Visible = true;
             }
-        }      
-        //NOT NEEDED:
-        private void textBoxB_TextChanged(object sender, EventArgs e)
+        }   
+        //INPUT CONTROL:
+        
+        //textBoxAdvanced
+        private void textBoxAdvanced_TextChanged(object sender, EventArgs e)
         {
-
+            double score = 0;
+            if (double.TryParse(textBoxAdvanced.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
+            {
+                textBoxAdvanced.BackColor = Color.LightGreen;
+                buttonRoot.Enabled = true;
+            }
+            else
+            {
+                textBoxAdvanced.BackColor = Color.PaleVioletRed;
+                buttonRoot.Enabled = false;
+            }
         }
+        //textBoxA
         private void textBoxA_TextChanged(object sender, EventArgs e)
         {
-           
+            double score = 0;
+            if (double.TryParse(textBoxA.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
+            {
+                textBoxA.BackColor = Color.LightGreen;
+                buttonMinus.Enabled = true;
+                button2.Enabled = true; //multiply button
+                buttonPlus.Enabled = true;
+                buttondivide.Enabled = true;
+            }
+            else
+            {
+                textBoxAdvanced.BackColor = Color.PaleVioletRed;
+                buttonMinus.Enabled = false;
+                button2.Enabled = false; //multiply button
+                buttonPlus.Enabled = false;
+                buttondivide.Enabled = false;
+            }
         }
+        //textBoxB
+        private void textBoxB_TextChanged(object sender, EventArgs e)
+        {
+            double score = 0;
+            if (double.TryParse(textBoxA.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
+            {
+                textBoxA.BackColor = Color.LightGreen;
+                buttonMinus.Enabled = true;
+                button2.Enabled = true; //multiply button
+                buttonPlus.Enabled = true;
+                buttondivide.Enabled = true;
+            }
+            else
+            {
+                textBoxAdvanced.BackColor = Color.PaleVioletRed;
+                buttonMinus.Enabled = false;
+                button2.Enabled = false; //multiply button
+                buttonPlus.Enabled = false;
+                buttondivide.Enabled = false;
+            }
+        }
+
+        //NOT NEEDED:
         //Root_broken
         private void buttonRoot_Click(object sender, EventArgs e)
         {        
@@ -175,5 +227,6 @@ namespace Calculator
         {
             
         }
+
     }
 }

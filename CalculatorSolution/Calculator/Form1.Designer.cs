@@ -45,7 +45,7 @@
             this.labelinfostart = new System.Windows.Forms.Label();
             this.buttonSelectCalc = new System.Windows.Forms.Button();
             this.groupBoxAdvanced = new System.Windows.Forms.GroupBox();
-            this.buttonPercent = new System.Windows.Forms.Button();
+            this.buttonSquare = new System.Windows.Forms.Button();
             this.buttonRoot = new System.Windows.Forms.Button();
             this.labelResultAdvanced = new System.Windows.Forms.Label();
             this.textBoxAdvanced = new System.Windows.Forms.TextBox();
@@ -215,7 +215,7 @@
             // 
             // groupBoxAdvanced
             // 
-            this.groupBoxAdvanced.Controls.Add(this.buttonPercent);
+            this.groupBoxAdvanced.Controls.Add(this.buttonSquare);
             this.groupBoxAdvanced.Controls.Add(this.buttonRoot);
             this.groupBoxAdvanced.Controls.Add(this.labelResultAdvanced);
             this.groupBoxAdvanced.Controls.Add(this.textBoxAdvanced);
@@ -227,17 +227,20 @@
             this.groupBoxAdvanced.Text = "Enter the value";
             this.groupBoxAdvanced.Visible = false;
             // 
-            // buttonPercent
+            // buttonSquare
             // 
-            this.buttonPercent.Location = new System.Drawing.Point(187, 82);
-            this.buttonPercent.Name = "buttonPercent";
-            this.buttonPercent.Size = new System.Drawing.Size(75, 23);
-            this.buttonPercent.TabIndex = 3;
-            this.buttonPercent.Text = "%";
-            this.buttonPercent.UseVisualStyleBackColor = true;
+            this.buttonSquare.Enabled = false;
+            this.buttonSquare.Location = new System.Drawing.Point(187, 82);
+            this.buttonSquare.Name = "buttonSquare";
+            this.buttonSquare.Size = new System.Drawing.Size(75, 23);
+            this.buttonSquare.TabIndex = 3;
+            this.buttonSquare.Text = "Square";
+            this.buttonSquare.UseVisualStyleBackColor = true;
+            this.buttonSquare.Click += new System.EventHandler(this.buttonSquare_Click);
             // 
             // buttonRoot
             // 
+            this.buttonRoot.Enabled = false;
             this.buttonRoot.Location = new System.Drawing.Point(187, 43);
             this.buttonRoot.Name = "buttonRoot";
             this.buttonRoot.Size = new System.Drawing.Size(75, 23);
@@ -330,7 +333,7 @@
         private System.Windows.Forms.GroupBox groupBoxAdvanced;
         private System.Windows.Forms.Label labelResultAdvanced;
         private System.Windows.Forms.TextBox textBoxAdvanced;
-        private System.Windows.Forms.Button buttonPercent;
+        private System.Windows.Forms.Button buttonSquare;
         private System.Windows.Forms.Button buttonRoot;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonAbout;

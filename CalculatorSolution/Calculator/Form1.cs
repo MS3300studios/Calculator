@@ -127,6 +127,22 @@ namespace Calculator
             labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
 
         }
+        //Square
+        private void buttonSquare_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double d = double.Parse(textBoxAdvanced.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Wrong input! Reload the calculator and try again! For instructions, open ReadMe.txt in the programme files.");
+                Application.Exit();
+            }
+            double a = Convert.ToDouble(textBoxAdvanced.Text);
+            labelResultAdvanced.Visible = true;
+            labelResultAdvanced.Text = $"{a*a}";
+        }
         //OTHERS:
 
         //Clear
@@ -176,22 +192,24 @@ namespace Calculator
         private void textBoxAdvanced_TextChanged(object sender, EventArgs e)
         {
             double score = 0;
-            if (double.TryParse(textBoxAdvanced.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
+            if (double.TryParse(textBoxAdvanced.Text, out score)) //out means that the score will go to int score
             {
                 textBoxAdvanced.BackColor = Color.LightGreen;
                 buttonRoot.Enabled = true;
+                buttonSquare.Enabled = true;
             }
             else
             {
                 textBoxAdvanced.BackColor = Color.PaleVioletRed;
                 buttonRoot.Enabled = false;
+                buttonSquare.Enabled = false;
             }
         }
         //textBoxA
         private void textBoxA_TextChanged(object sender, EventArgs e)
         {
             double score = 0;
-            if (double.TryParse(textBoxA.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
+            if (double.TryParse(textBoxA.Text, out score)) //out means that the score will go to int score
             {
                 textBoxA.BackColor = Color.LightGreen;
                 buttonMinus.Enabled = true;

@@ -1,9 +1,11 @@
-﻿1.[COMPLETED] Add message box   
-2.[COMPLETED] Check "argument exeptions"
-3. Add computing history (via class -> list)
-4. Develop % button
-5.[COMPLETED] Make the window size unchangable in window properties
-6.[COMPLETED] Add cosmetic green and red textbox changes
-7.[COMPLETED] Add an icon for the programme
-8.[COMPLETED] Make code more tidy, move buttons and broken methods and utilities
-9.[COMPLETED] Fix the colours in textBoxA and textBoxB
+﻿01.[COMPLETED] Add message box   
+02.[COMPLETED] Check "argument exeptions"
+03. Add computing history (via class -> list)
+04.[CLOSED] Develop % button
+05.[COMPLETED] Make the window size unchangable in window properties
+06.[COMPLETED] Add cosmetic green and red textbox changes
+07.[COMPLETED] Add an icon for the programme
+08.[COMPLETED] Make code more tidy, move buttons and broken methods and utilities
+09.[COMPLETED] Fix the colours in textBoxA and textBoxB
+10. Develop Square Method
+11. Develop Factorial Method

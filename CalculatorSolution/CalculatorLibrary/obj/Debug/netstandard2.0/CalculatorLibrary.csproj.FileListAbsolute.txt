@@ -6,3 +6,12 @@ D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\net
 D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.AssemblyInfo.cs
 D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.dll
 D:\WSEI programmes\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.pdb
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\bin\Debug\netstandard2.0\CalculatorLibrary.deps.json
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\bin\Debug\netstandard2.0\CalculatorLibrary.dll
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\bin\Debug\netstandard2.0\CalculatorLibrary.pdb
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.csprojAssemblyReference.cache
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.AssemblyInfoInputs.cache
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.AssemblyInfo.cs
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.dll
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.pdb
+D:\VS solutions\Calculator\CalculatorSolution\CalculatorLibrary\obj\Debug\netstandard2.0\CalculatorLibrary.csproj.CoreCompileInputs.cache

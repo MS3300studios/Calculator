@@ -12,10 +12,10 @@ using CalculatorLibrary;
 namespace Calculator
 {
     public partial class Form1 : Form
-    {
+    {        
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }       
 
         //BUTTONS:
@@ -24,6 +24,8 @@ namespace Calculator
         private void buttonPlus_Click(object sender, EventArgs e)
         {
 
+            CalculatorClass calc = new CalculatorClass();
+            
             try
             {
                 double d = double.Parse(textBoxA.Text);

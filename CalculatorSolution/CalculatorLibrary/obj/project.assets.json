@@ -179,21 +179,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSI\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WSEI programmes\\Calculator\\CalculatorSolution\\CalculatorLibrary\\CalculatorLibrary.csproj",
+      "projectUniqueName": "D:\\VS solutions\\Calculator\\CalculatorSolution\\CalculatorLibrary\\CalculatorLibrary.csproj",
       "projectName": "CalculatorLibrary",
-      "projectPath": "D:\\WSEI programmes\\Calculator\\CalculatorSolution\\CalculatorLibrary\\CalculatorLibrary.csproj",
+      "projectPath": "D:\\VS solutions\\Calculator\\CalculatorSolution\\CalculatorLibrary\\CalculatorLibrary.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-      "outputPath": "D:\\WSEI programmes\\Calculator\\CalculatorSolution\\CalculatorLibrary\\obj\\",
+      "outputPath": "D:\\VS solutions\\Calculator\\CalculatorSolution\\CalculatorLibrary\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -236,7 +232,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

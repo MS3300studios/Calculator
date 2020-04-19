@@ -24,7 +24,7 @@ namespace Calculator
         private void buttonPlus_Click(object sender, EventArgs e)
         {
 
-            CalculatorClass calc = new CalculatorClass();
+            //CalculatorClass calc = new CalculatorClass();
             
             try
             {

@@ -8,7 +8,8 @@ namespace CalculatorLibrary
         //constructor
         public CalculatorClass()
         {
-           public var historylist = new List<string>();
+           
         }
+        //public List historylist = new List<string>();
     }
 }

@@ -11,12 +11,15 @@ using CalculatorLibrary;
 
 namespace Calculator
 {
+
     public partial class Form1 : Form
     {        
         public Form1()
         {
             InitializeComponent();            
-        }       
+        }
+        //computation history table
+        public List<string> history = new List<string>();
 
         //BUTTONS:
 
@@ -39,8 +42,10 @@ namespace Calculator
                                
             double a = double.Parse(textBoxA.Text);
             double b = double.Parse(textBoxB.Text);
+            double abresult = a + b;
             LabelResult.Visible = true;
-            LabelResult.Text = $"{a + b}";
+            LabelResult.Text = $"{abresult}";
+            history.Add($"{a}+{b}={abresult}");
                 
         }
         //multiplication
@@ -162,7 +167,7 @@ namespace Calculator
         //history
         private void buttonHistory_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(String.Join("\n",history));
         }
         //ComboBox Option Select Button
         private void buttonSelectCalc_Click(object sender, EventArgs e)

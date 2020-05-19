@@ -328,7 +328,7 @@
         private System.Windows.Forms.Label labelB;
         private System.Windows.Forms.GroupBox groupBoxMain;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label labelinfostart;
+        private System.Windows.Forms.Label labelinfostart;      
         private System.Windows.Forms.Button buttonSelectCalc;
         private System.Windows.Forms.GroupBox groupBoxAdvanced;
         private System.Windows.Forms.Label labelResultAdvanced;

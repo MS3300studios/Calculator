@@ -45,7 +45,7 @@ namespace Calculator
             double abresult = a + b;
             LabelResult.Visible = true;
             LabelResult.Text = $"{abresult}";
-            history.Add($"{a}+{b}={abresult}");
+            history.Add($"{history.Count+1}.     {a}+{b}={abresult}");
                 
         }
         //multiplication
@@ -65,7 +65,10 @@ namespace Calculator
             double a = Convert.ToDouble(textBoxA.Text);
             double b = Convert.ToDouble(textBoxB.Text);
             LabelResult.Visible = true;
-            LabelResult.Text = $"{a * b}";
+            double abresult = a * b;
+            LabelResult.Visible = true;
+            LabelResult.Text = $"{abresult}";
+            history.Add($"{history.Count + 1}.     {a}*{b}={abresult}");
         }
         //subtraction
         private void buttonMinus_Click(object sender, EventArgs e)
@@ -167,7 +170,7 @@ namespace Calculator
         //history
         private void buttonHistory_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(String.Join("\n",history));
+            MessageBox.Show(String.Join("\n",history));  //łączy wszystko w tablicy w jednego stringa ("to czym łączy")
         }
         //ComboBox Option Select Button
         private void buttonSelectCalc_Click(object sender, EventArgs e)

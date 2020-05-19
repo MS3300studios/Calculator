@@ -162,6 +162,11 @@ namespace Calculator
             double a = Convert.ToDouble(textBoxAdvanced.Text);
             labelResultAdvanced.Visible = true;
             labelResultAdvanced.Text = $"{a*a}";
+            double aresult = a * a;
+            LabelResult.Visible = true;
+            LabelResult.Text = $"{aresult}";
+            history.Add($"{history.Count + 1}.      {a}^2 = {aresult}");
+
         }
         //OTHERS:
 

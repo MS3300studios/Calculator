@@ -117,8 +117,11 @@ namespace Calculator
             }
             else
             {
+                LabelResult.Visible = true;               
+                double abresult = a / b;
                 LabelResult.Visible = true;
-                LabelResult.Text = $"{a / b}";
+                LabelResult.Text = $"{abresult}";
+                history.Add($"{history.Count + 1}.     {a}/{b}={abresult}");
             }
 
         }

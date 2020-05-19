@@ -45,7 +45,7 @@ namespace Calculator
             double abresult = a + b;
             LabelResult.Visible = true;
             LabelResult.Text = $"{abresult}";
-            history.Add($"{history.Count+1}.     {a}+{b}={abresult}");
+            history.Add($"{history.Count+1}.     {a}+{b} = {abresult}");
                 
         }
         //multiplication
@@ -68,7 +68,7 @@ namespace Calculator
             double abresult = a * b;
             LabelResult.Visible = true;
             LabelResult.Text = $"{abresult}";
-            history.Add($"{history.Count + 1}.     {a}*{b}={abresult}");
+            history.Add($"{history.Count + 1}.     {a}*{b} = {abresult}");
         }
         //subtraction
         private void buttonMinus_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace Calculator
             double abresult = a - b;
             LabelResult.Visible = true;
             LabelResult.Text = $"{abresult}";
-            history.Add($"{history.Count + 1}.     {a}-{b}={abresult}");
+            history.Add($"{history.Count + 1}.     {a}-{b} = {abresult}");
 
         }
         //division
@@ -121,7 +121,7 @@ namespace Calculator
                 double abresult = a / b;
                 LabelResult.Visible = true;
                 LabelResult.Text = $"{abresult}";
-                history.Add($"{history.Count + 1}.     {a}/{b}={abresult}");
+                history.Add($"{history.Count + 1}.     {a}/{b} = {abresult}");
             }
 
         }
@@ -141,6 +141,10 @@ namespace Calculator
             double a = Convert.ToDouble(textBoxAdvanced.Text);
             labelResultAdvanced.Visible = true;
             labelResultAdvanced.Text = $"{Math.Sqrt(a)}";
+            double aresult = Math.Sqrt(a);
+            LabelResult.Visible = true;
+            LabelResult.Text = $"{aresult}";
+            history.Add($"{history.Count + 1}.     root of {a} = {aresult}");
 
         }
         //Square

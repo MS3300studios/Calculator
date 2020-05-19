@@ -87,7 +87,10 @@ namespace Calculator
             double a = Convert.ToDouble(textBoxA.Text);
             double b = Convert.ToDouble(textBoxB.Text);
             LabelResult.Visible = true;
-            LabelResult.Text = $"{a - b}";
+            double abresult = a - b;
+            LabelResult.Visible = true;
+            LabelResult.Text = $"{abresult}";
+            history.Add($"{history.Count + 1}.     {a}-{b}={abresult}");
 
         }
         //division

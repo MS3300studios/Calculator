@@ -233,21 +233,29 @@ namespace Calculator
         //textBoxA
         private void textBoxA_TextChanged(object sender, EventArgs e)
         {
-            double score = 0;
-            if (double.TryParse(textBoxA.Text, out score)) //out means that the score will go to int score
+            double testResult;
+            if (double.TryParse(textBoxA.Text, out testResult)) //out means that the score will go to double score
             {
                 textBoxA.BackColor = Color.LightGreen;
                 buttonMinus.Enabled = true;
                 button2.Enabled = true; //multiply button
                 buttonPlus.Enabled = true;
                 buttondivide.Enabled = true;
-                if (textBoxB.Text == "") 
-                {                    
+                //secondary other box check
+                if (textBoxB.Text == "")
+                {
                     buttonMinus.Enabled = false;
                     button2.Enabled = false; //multiply button
                     buttonPlus.Enabled = false;
                     buttondivide.Enabled = false;
-                }                
+                }
+                else if(testResult == 0)
+                {
+                    buttonMinus.Enabled = false;
+                    button2.Enabled = false; //multiply button
+                    buttonPlus.Enabled = false;
+                    buttondivide.Enabled = false;
+                }
             }
             else
             {
@@ -261,14 +269,29 @@ namespace Calculator
         //textBoxB
         private void textBoxB_TextChanged(object sender, EventArgs e)
         {
-            double score = 0;
-            if (double.TryParse(textBoxB.Text, out score)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
+            double testResult;
+            if (double.TryParse(textBoxB.Text, out testResult)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
             {
                 textBoxB.BackColor = Color.LightGreen;
                 buttonMinus.Enabled = true;
                 button2.Enabled = true; //multiply button
                 buttonPlus.Enabled = true;
                 buttondivide.Enabled = true;
+                //secondary other box check
+                if (textBoxA.Text == "")
+                {
+                    buttonMinus.Enabled = false;
+                    button2.Enabled = false; //multiply button
+                    buttonPlus.Enabled = false;
+                    buttondivide.Enabled = false;
+                }
+                else if (testResult == 0)
+                {
+                    buttonMinus.Enabled = false;
+                    button2.Enabled = false; //multiply button
+                    buttonPlus.Enabled = false;
+                    buttondivide.Enabled = false;
+                }
             }
             else
             {
@@ -280,7 +303,7 @@ namespace Calculator
             }
         }
 
-        //NOT NEEDED:
+        //NOT NEEDED (don't delete):
         //Root_broken
         private void buttonRoot_Click(object sender, EventArgs e)
         {        

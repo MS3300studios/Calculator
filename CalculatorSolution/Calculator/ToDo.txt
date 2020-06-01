@@ -1,6 +1,6 @@
 ﻿01.[COMPLETED] Add message box   
 02.[COMPLETED] Check "argument exeptions"
-03.[!]Add computing history (via class -> list)
+03.[COMPLETED]Add computing history (via class -> list)
 04.[CLOSED] Develop % button
 05.[COMPLETED] Make the window size unchangable in window properties
 06.[COMPLETED] Add cosmetic green and red textbox changes

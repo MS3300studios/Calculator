@@ -235,13 +235,8 @@ namespace Calculator
         {
             double testResult;
             if (double.TryParse(textBoxA.Text, out testResult)) //out means that the score will go to double score
-            {
-                /* textBoxA.BackColor = Color.LightGreen;
-                buttonMinus.Enabled = true;
-                button2.Enabled = true; //multiply button
-                buttonPlus.Enabled = true;
-                buttondivide.Enabled = true;
-                //secondary other box check */
+            {                
+                //secondary other box check
                 if (textBoxB.Text == "") 
                 {
                     buttonMinus.Enabled = false;
@@ -259,6 +254,7 @@ namespace Calculator
                 else if(double.TryParse(textBoxA.Text, out testResult)&& double.TryParse(textBoxB.Text, out testResult))
                 {
                     textBoxA.BackColor = Color.LightGreen;
+                    textBoxB.BackColor = Color.LightGreen;
                     buttonMinus.Enabled = true;
                     button2.Enabled = true; //multiply button
                     buttonPlus.Enabled = true;
@@ -280,11 +276,6 @@ namespace Calculator
             double testResult;
             if (double.TryParse(textBoxB.Text, out testResult)) //out oznacza tutaj że ma wywalić ten wynik poza nawias do int score
             {
-              /*  textBoxB.BackColor = Color.LightGreen;
-                buttonMinus.Enabled = true;
-                button2.Enabled = true; //multiply button
-                buttonPlus.Enabled = true;
-                buttondivide.Enabled = true; */
                 //secondary other box check
                 if (textBoxA.Text == "")
                 {
@@ -303,6 +294,7 @@ namespace Calculator
                 else if (double.TryParse(textBoxA.Text, out testResult) && double.TryParse(textBoxB.Text, out testResult))
                 {
                     textBoxA.BackColor = Color.LightGreen;
+                    textBoxB.BackColor = Color.LightGreen;
                     buttonMinus.Enabled = true;
                     button2.Enabled = true; //multiply button
                     buttonPlus.Enabled = true;
